@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-xd_hm^gv=8#b8r(!ska8bu8hczs8q+3c8nmnt_a#26d^2!#4t0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'friendly-space-succotash-vppwjqqrj44cw4q7-8000.app.github.dev']
 
 
 # Application definition
@@ -143,3 +143,5 @@ CORS_ALLOW_HEADERS = [
     'authorization',
     'x-csrftoken',
 ]
+
+USE_X_FORWARDED_HOST = True
